@@ -648,7 +648,7 @@ PrefabInstance:
     - target: {fileID: 3632163334901064234, guid: 19718202b7604154c9e96ff64fddd8cd,
         type: 3}
       propertyPath: m_Name
-      value: CardPositions
+      value: CardPositionsTable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -953,7 +953,7 @@ PrefabInstance:
     - target: {fileID: 2720199961966295753, guid: 75613628c3b3f5e4ebe682639c0816b3,
         type: 3}
       propertyPath: m_Name
-      value: CardPositions
+      value: CardPositionsHand
       objectReference: {fileID: 0}
     - target: {fileID: 6251640813122679147, guid: 75613628c3b3f5e4ebe682639c0816b3,
         type: 3}
