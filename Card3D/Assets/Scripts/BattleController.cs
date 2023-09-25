@@ -70,11 +70,13 @@ public class BattleController : MonoBehaviour
                 break;
 
                 case TurnOrder.enemyTurn:
+                UiController.instance.coinsWarn.SetActive(false);
                 UiController.instance.playerTurn.SetActive(false);
                 UiController.instance.drawCardButton.SetActive(false);
                 UiController.instance.enemyTurn.SetActive(true);
                 Debug.Log("Enemy makin moves");
                 //NextTurn();
+                EnemyController.instance.StartAction();
                 break;
 
                 case TurnOrder.calculateRound:

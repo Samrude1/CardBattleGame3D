@@ -18,7 +18,7 @@ public class Card : MonoBehaviour
     public CardPlacePoint assignedPlace;
     public bool isHovered = false;
 
-    private Vector3 targetPoint;
+    private Vector3 targetPoint; // tämä on siis 0,0,0
     private Quaternion targetRot;
     private HandController handController;
     public bool isSelected;
@@ -67,7 +67,7 @@ public class Card : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime);
+        transform.position = Vector3.Lerp(transform.position, targetPoint, moveSpeed * Time.deltaTime); // Target point on tässä 0,0,0
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRot, rotateSpeed * Time.deltaTime);
 
         if (isSelected)
