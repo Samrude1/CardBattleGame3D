@@ -17,6 +17,9 @@ public class EnemyController : MonoBehaviour
     public Transform cardSpawnPoint;
     public CardPlacePoint[] enemyCardPoints;
 
+    public enum AIType { FromDeck, handRandom, handDefence, handAttack}
+    public AIType enemyType;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -66,23 +69,41 @@ public class EnemyController : MonoBehaviour
         int randomPoint = Random.Range(0, cardPoints.Count);
         CardPlacePoint selectedPoint = cardPoints[randomPoint];
 
-        while(selectedPoint.activeCard != null && cardPoints.Count > 0)
+        while (selectedPoint.activeCard != null && cardPoints.Count > 0)
         {
             randomPoint = Random.Range(0, cardPoints.Count);
             selectedPoint = cardPoints[randomPoint];
             cardPoints.RemoveAt(randomPoint);
         }
 
-        if(selectedPoint.activeCard == null)
+        switch (enemyType)
         {
-            Card newCard = Instantiate(cardToSpawn, cardSpawnPoint.position, cardSpawnPoint.rotation);
-            newCard.cardSO = activeCards[0];
-            activeCards.RemoveAt(0);
-            newCard.SetupCard();
-            newCard.MoveToPoint(selectedPoint.transform.position, selectedPoint.transform.rotation);
-            selectedPoint.activeCard = newCard;
-            newCard.assignedPlace = selectedPoint;
-        }
+            case AIType.FromDeck:
+
+                if (selectedPoint.activeCard == null)
+                {
+                    Card newCard = Instantiate(cardToSpawn, cardSpawnPoint.position, cardSpawnPoint.rotation);
+                    newCard.cardSO = activeCards[0];
+                    activeCards.RemoveAt(0);
+                    newCard.SetupCard();
+                    newCard.MoveToPoint(selectedPoint.transform.position, selectedPoint.transform.rotation);
+                    selectedPoint.activeCard = newCard;
+                    newCard.assignedPlace = selectedPoint;
+                }
+                break;
+
+            case AIType.handRandom:
+
+                break;
+
+            case AIType.handDefence:
+
+                break;
+            
+            case AIType.handAttack: 
+                
+                break;
+        }   
     }
 
 
