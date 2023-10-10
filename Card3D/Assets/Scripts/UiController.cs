@@ -17,6 +17,7 @@ public class UiController : MonoBehaviour
     }
 
     public TMP_Text playerManaText;
+    public TMP_Text enemyManaText;
 
     // Start is called before the first frame update
     void Start()
@@ -37,9 +38,14 @@ public class UiController : MonoBehaviour
         }
     }
 
-    public void SetPlayerCoinsText(int mana)
+    public void SetPlayerCoinsText(int coins)
     {
-        playerManaText.text = "Coins: " + mana;
+        playerManaText.text = "Coins: " + coins;
+    }
+
+    public void SetEnemyCoinsText(int coins)
+    {
+        enemyManaText.text = "Coins: " + coins;
     }
 
     public void ShowCoinsWarn()

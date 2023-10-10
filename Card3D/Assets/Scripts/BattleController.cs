@@ -6,27 +6,31 @@ public class BattleController : MonoBehaviour
 {
     public enum TurnOrder { playerTurn, enemyTurn, calculateRound}
     public TurnOrder turnOrder;
-    public int currentmaxCoins;
+    public int currentmaxCoins, currentEnemyMaxcoins;
     public static BattleController instance;
     public int cardsPerTurn = 1;
     public int startingCards = 3;
-    
+    public RoundController roundController;
     private void Awake()
     { 
         instance = this;
     }
 
-    public int startingCoins = 4, maxCoins = 12;
-    public int playerCoins;
+    public int startingCoins = 1, maxCoins = 12;
+    public int playerCoins, enemyCoins;
 
     // Start is called before the first frame update
     void Start()
     {
-        //playerCoins = startingCoins;
-        //UiController.instance.SetPlayerCoinsText(playerCoins);
-        currentmaxCoins = startingCoins;
+        roundController = FindObjectOfType<RoundController>();
+        playerCoins = startingCoins;
+        UiController.instance.SetPlayerCoinsText(playerCoins);
+        enemyCoins = startingCoins;
         DeckController.instance.AutoDraw(startingCards);
-        FillMyMoneyzz();
+        currentmaxCoins = startingCoins;
+        currentEnemyMaxcoins = startingCoins;
+        UiController.instance.SetEnemyCoinsText(enemyCoins);
+          
     }
 
     // Update is called once per frame
@@ -37,12 +41,22 @@ public class BattleController : MonoBehaviour
 
     public void SpendPlayerCoins(int amountToSpend)
     {
-        playerCoins = playerCoins - amountToSpend;
+        playerCoins -= amountToSpend;
         if(playerCoins < 0)
         {
             playerCoins = 0;
         }
         UiController.instance.SetPlayerCoinsText(playerCoins);
+    }
+
+    public void SpendEnemyCoins(int amountToSpend)
+    {
+        enemyCoins -= amountToSpend;
+        if (enemyCoins < 0)
+        {
+            enemyCoins = 0;
+        }
+        UiController.instance.SetEnemyCoinsText(enemyCoins);
     }
 
     public void NextTurn()
@@ -77,6 +91,13 @@ public class BattleController : MonoBehaviour
                 Debug.Log("Enemy makin moves");
                 //NextTurn();
                 EnemyController.instance.StartAction();
+
+                if (currentEnemyMaxcoins < maxCoins)
+                {
+                    currentEnemyMaxcoins++;
+                }
+                //FillEnemyMoneyzz();
+
                 break;
 
                 case TurnOrder.calculateRound:
@@ -85,6 +106,10 @@ public class BattleController : MonoBehaviour
                 Debug.Log("Making calculations");
                 //NextTurn();
 
+                //FillMyMoneyzz();
+                FillEnemyMoneyzz();
+                roundController.CalculateRoundResult();
+                roundController.ResetRoundPoints();
                 break;
         }
     }
@@ -98,7 +123,15 @@ public class BattleController : MonoBehaviour
     public void FillMyMoneyzz()
     {
         playerCoins = currentmaxCoins;
+        enemyCoins = currentEnemyMaxcoins;
         UiController.instance.SetPlayerCoinsText(playerCoins);
+        UiController.instance.SetEnemyCoinsText(enemyCoins);
+    }
+
+    public void FillEnemyMoneyzz()
+    {
+        enemyCoins = currentEnemyMaxcoins;
+        UiController.instance.SetEnemyCoinsText(enemyCoins);
     }
 
     public void ToNextPhase()

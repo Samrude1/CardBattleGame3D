@@ -7,8 +7,7 @@ using UnityEngine.UI;
 public class Card : MonoBehaviour
 {
     public CardScriptableObject cardSO;
-
-    public int health, attack, coins;
+    public int defence, attack, coins;
     public TMP_Text coinsText, nameText, actionText, loreText;
     public Image cardArt;
     public float moveSpeed, rotateSpeed;
@@ -17,6 +16,9 @@ public class Card : MonoBehaviour
     public LayerMask whatIsDesktop, whatIsPlacement;
     public CardPlacePoint assignedPlace;
     public bool isHovered = false;
+    //public int playerAttackPoints = 0;
+    //public int playerDefensePoints = 0;
+    public RoundController roundController;
 
     private Vector3 targetPoint; // tämä on siis 0,0,0
     private Quaternion targetRot;
@@ -29,6 +31,8 @@ public class Card : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        roundController = FindObjectOfType<RoundController>();
+
         if (targetPoint == Vector3.zero)
         {
             targetPoint = transform.position;
@@ -43,7 +47,7 @@ public class Card : MonoBehaviour
     {
         if (cardSO != null)
         {
-            health = cardSO.health;
+            defence = cardSO.defence;
             attack = cardSO.attack;
             coins = cardSO.coins;
 
@@ -102,6 +106,8 @@ public class Card : MonoBehaviour
 
                             handController.RemoveCardFromHand(this);
                             BattleController.instance.SpendPlayerCoins(coins);
+                            Debug.Log("card played"); //This is when we put some points to pool
+                            roundController.AddPlayerPoints(cardSO.attack, cardSO.defence);
                         }
                         else
                         {
@@ -180,4 +186,5 @@ public class Card : MonoBehaviour
 
         }
     }
+    
 }

@@ -61,7 +61,12 @@ PrefabInstance:
     - target: {fileID: 3773045735980576558, guid: b044e956cc22df9429050ae2699972e9,
         type: 3}
       propertyPath: m_Name
-      value: EnemyCard Variant
+      value: EnemyCard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8426771916565470576, guid: b044e956cc22df9429050ae2699972e9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

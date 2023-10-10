@@ -46,8 +46,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnOrder: 0
   currentmaxCoins: 0
+  currentEnemyMaxcoins: 0
   cardsPerTurn: 1
   startingCards: 3
-  startingCoins: 4
+  roundCalculator: {fileID: 2729756244564084729, guid: d0c66ff941dae6945bf83af80d23056d,
+    type: 3}
+  startingCoins: 1
   maxCoins: 12
   playerCoins: 0
+  enemyCoins: 0

@@ -192,7 +192,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0d3a82715a737124a8cd501e767688f8, type: 3}
-  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  m_Color: {r: 0.24705882, g: 0.24705882, b: 0.24705882, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -408,8 +408,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &322424678890906919
 GameObject:
   m_ObjectHideFlags: 0
@@ -509,8 +509,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 1
+  isDefense: 0
 --- !u!1 &456248145976450633
 GameObject:
   m_ObjectHideFlags: 0
@@ -703,7 +703,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0d3a82715a737124a8cd501e767688f8, type: 3}
-  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  m_Color: {r: 0.24346496, g: 0.8679245, b: 0.20879315, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -834,8 +834,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &851933397052854016
 GameObject:
   m_ObjectHideFlags: 0
@@ -999,8 +999,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 1
+  isDefense: 0
 --- !u!1 &1644803502411784849
 GameObject:
   m_ObjectHideFlags: 0
@@ -1218,8 +1218,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &2393654179801210104
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,8 +1523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &2760847021076904154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,8 +1646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &2867698667490237482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1769,8 +1769,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &3124346407654132855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1892,8 +1892,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &3215744295917989747
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,8 +1993,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 1
 --- !u!1 &3776715787784152981
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,8 +2148,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &3855660620060175895
 GameObject:
   m_ObjectHideFlags: 0
@@ -2257,7 +2257,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0d3a82715a737124a8cd501e767688f8, type: 3}
-  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  m_Color: {r: 0.24346496, g: 0.8679245, b: 0.20879315, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -2366,8 +2366,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 1
 --- !u!1 &4170287161350067543
 GameObject:
   m_ObjectHideFlags: 0
@@ -2467,8 +2467,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 1
+  isDefense: 0
 --- !u!1 &4442993838023054421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2590,8 +2590,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &4792985524040655636
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,8 +2809,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &5596951970272948554
 GameObject:
   m_ObjectHideFlags: 0
@@ -2886,7 +2886,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0d3a82715a737124a8cd501e767688f8, type: 3}
-  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  m_Color: {r: 0.24346496, g: 0.8679245, b: 0.20879315, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -3102,8 +3102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &6267255664476013015
 GameObject:
   m_ObjectHideFlags: 0
@@ -3384,8 +3384,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 1
+  isDefense: 0
 --- !u!1 &6868413596465019884
 GameObject:
   m_ObjectHideFlags: 0
@@ -3485,8 +3485,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 1
 --- !u!1 &6959968432197111187
 GameObject:
   m_ObjectHideFlags: 0
@@ -3684,8 +3684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &7101077003884618298
 GameObject:
   m_ObjectHideFlags: 0
@@ -3869,7 +3869,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0d3a82715a737124a8cd501e767688f8, type: 3}
-  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  m_Color: {r: 0.24346496, g: 0.8679245, b: 0.20879315, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -3978,8 +3978,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 1
 --- !u!1 &7888361369166760090
 GameObject:
   m_ObjectHideFlags: 0
@@ -4079,8 +4079,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 1
+  isDefense: 0
 --- !u!1 &8015987189220690243
 GameObject:
   m_ObjectHideFlags: 0
@@ -4180,8 +4180,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 1
+  isDefense: 0
 --- !u!1 &8057276365564461301
 GameObject:
   m_ObjectHideFlags: 0
@@ -4409,8 +4409,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 1
+  isDefense: 0
 --- !u!1 &8556259160391322495
 GameObject:
   m_ObjectHideFlags: 0
@@ -4486,7 +4486,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0d3a82715a737124a8cd501e767688f8, type: 3}
-  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  m_Color: {r: 0.5754717, g: 0.5754717, b: 0.5754717, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -4510,8 +4510,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 1
 --- !u!1 &8603039668482602077
 GameObject:
   m_ObjectHideFlags: 0
@@ -4633,8 +4633,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 1
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 0
 --- !u!1 &8775747037457656230
 GameObject:
   m_ObjectHideFlags: 0
@@ -4734,8 +4734,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeCard: {fileID: 0}
   isPlayerPoint: 0
-  isAttackCardPoint: 1
-  isDefenseCardPoint: 1
+  isAttack: 0
+  isDefense: 1
 --- !u!1 &8846365208838063915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4843,7 +4843,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0d3a82715a737124a8cd501e767688f8, type: 3}
-  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  m_Color: {r: 0.24346496, g: 0.8679245, b: 0.20879315, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -4928,7 +4928,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 0d3a82715a737124a8cd501e767688f8, type: 3}
-  m_Color: {r: 0.24528301, g: 0.24528301, b: 0.24528301, a: 1}
+  m_Color: {r: 0.24346496, g: 0.8679245, b: 0.20879315, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1

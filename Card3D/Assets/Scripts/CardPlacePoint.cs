@@ -6,7 +6,7 @@ public class CardPlacePoint : MonoBehaviour
 {
     public Card activeCard;
     public bool isPlayerPoint;
-    public bool isAttackCardPoint;
-    public bool isDefenseCardPoint;
+    public bool isAttack;
+    public bool isDefense;
 
 }

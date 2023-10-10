@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deckToUse:
-  - {fileID: 11400000, guid: c5af901308523c94793f3becc273139b, type: 2}
+  - {fileID: 11400000, guid: 07b0810017e1e9e43844d84ae2521a59, type: 2}
+  - {fileID: 11400000, guid: b6f95174f50bcb54fa5d37cc802b090f, type: 2}
   cardToSpawn: {fileID: 9154273891249079908, guid: b044e956cc22df9429050ae2699972e9,
     type: 3}
   drawCost: 1

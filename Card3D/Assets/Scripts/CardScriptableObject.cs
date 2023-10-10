@@ -12,7 +12,8 @@ public class CardScriptableObject : ScriptableObject
     public string math, lore;
 
 
-    public int health, attack, coins;
+    public int attack, defence, coins;
     public Sprite cardImage;
-    
+    public bool isDefense;
+    public bool isAttack;
 }

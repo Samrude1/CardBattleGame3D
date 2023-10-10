@@ -452,9 +452,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae11abf8b464b1d479a35ca0ba876abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardSO: {fileID: 11400000, guid: c5af901308523c94793f3becc273139b, type: 2}
-  health: 2
-  attack: 2
+  cardSO: {fileID: 11400000, guid: 07b0810017e1e9e43844d84ae2521a59, type: 2}
+  roundCalculator: {fileID: 2729756244564084729, guid: d0c66ff941dae6945bf83af80d23056d,
+    type: 3}
+  defence: 1
+  attack: 1
   coins: 1
   coinsText: {fileID: 666764156233161584}
   nameText: {fileID: 7530160218370289155}
@@ -473,6 +475,8 @@ MonoBehaviour:
     m_Bits: 128
   assignedPlace: {fileID: 0}
   isHovered: 0
+  playerAttackPoints: 0
+  playerDefencePoints: 0
   isSelected: 0
   theCol: {fileID: 8426771916565470576}
 --- !u!65 &8426771916565470576
