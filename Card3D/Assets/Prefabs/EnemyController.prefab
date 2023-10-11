@@ -79,6 +79,8 @@ MonoBehaviour:
   deckToUse:
   - {fileID: 11400000, guid: 07b0810017e1e9e43844d84ae2521a59, type: 2}
   - {fileID: 11400000, guid: b6f95174f50bcb54fa5d37cc802b090f, type: 2}
+  - {fileID: 11400000, guid: 2499395ae29e99b4ca8baa6d51a94a02, type: 2}
+  - {fileID: 11400000, guid: 79148ffd10d32d340880d3d713069859, type: 2}
   activeCards: []
   cardToSpawn: {fileID: 9141137495483349328, guid: 0921dd03d9dc67047b493eb691064dc1,
     type: 3}
@@ -98,5 +100,9 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   enemyTimer: 0.5
-  enemyType: 1
+  enemyAttackPoints: 0
+  enemyDefencePoints: 0
+  roundController: {fileID: 0}
+  enemyType: 0
+  cardsInHand: []
   startHandSize: 3

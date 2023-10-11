@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe4881564c485a54280d661db7f11a27, type: 3}
   m_Name: Attack
   m_EditorClassIdentifier: 
-  cardName: Attack
-  math: 2+2
-  lore: this
-  attack: 1
-  defence: 1
+  cardName: Attack 1
+  math: -8
+  lore: Attack 1
+  attack: 8
+  defence: 0
   coins: 1
   cardImage: {fileID: 21300000, guid: 1315088b5d6188248ac2208ca4064112, type: 3}
   isDefense: 0

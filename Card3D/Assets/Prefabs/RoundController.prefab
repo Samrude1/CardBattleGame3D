@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &415349050260585464
+--- !u!1 &6670949881092982069
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5026613129354389913}
-  - component: {fileID: 6327276113125600547}
+  - component: {fileID: 3911497555522089508}
+  - component: {fileID: 4841322084229440372}
   m_Layer: 0
-  m_Name: DeckController
+  m_Name: RoundController
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5026613129354389913
+--- !u!4 &3911497555522089508
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415349050260585464}
+  m_GameObject: {fileID: 6670949881092982069}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.11, y: 0.7, z: 0}
+  m_LocalPosition: {x: 0.13399145, y: -2.3064098, z: 1.6501789}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6327276113125600547
+--- !u!114 &4841322084229440372
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 415349050260585464}
+  m_GameObject: {fileID: 6670949881092982069}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d2190732f18be04597b2dd88793f7d1, type: 3}
+  m_Script: {fileID: 11500000, guid: 64109d76379199e40a8709a76669f4e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deckToUse:
-  - {fileID: 11400000, guid: 07b0810017e1e9e43844d84ae2521a59, type: 2}
-  - {fileID: 11400000, guid: b6f95174f50bcb54fa5d37cc802b090f, type: 2}
-  - {fileID: 11400000, guid: 2499395ae29e99b4ca8baa6d51a94a02, type: 2}
-  - {fileID: 11400000, guid: 79148ffd10d32d340880d3d713069859, type: 2}
-  cardToSpawn: {fileID: 9154273891249079908, guid: b044e956cc22df9429050ae2699972e9,
-    type: 3}
-  drawCost: 1
+  playerAttackPoints: 0
+  playerDefensePoints: 0
+  opponentAttackPoints: 0
+  opponentDefensePoints: 0
+  playerHealth: 100
+  opponentHealth: 100
+  playerHealthText: {fileID: 0}
+  opponentHealthText: {fileID: 0}

@@ -106,7 +106,7 @@ public class Card : MonoBehaviour
 
                             handController.RemoveCardFromHand(this);
                             BattleController.instance.SpendPlayerCoins(coins);
-                            Debug.Log("card played"); //This is when we put some points to pool
+                            //Debug.Log("card played"); //This is when we put some points to pool
                             roundController.AddPlayerPoints(cardSO.attack, cardSO.defence);
                         }
                         else
@@ -138,7 +138,7 @@ public class Card : MonoBehaviour
 
     private void OnMouseOver()
     {
-        Debug.Log("Hovering...");
+        //Debug.Log("Hovering...");
         if (inHand)
         {
             isHovered = true;
@@ -157,7 +157,7 @@ public class Card : MonoBehaviour
     {
         if (inHand && BattleController.instance.turnOrder == BattleController.TurnOrder.playerTurn)
         {
-            Debug.Log("Pressed");
+            //Debug.Log("Pressed");
             isSelected = true;
             theCol.enabled = false;
             justPressed = true;

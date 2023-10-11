@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Attack 1
   m_EditorClassIdentifier: 
   cardName: Attack 2
-  math: 2+2
-  lore: this
-  attack: 2
-  defence: 1
-  coins: 1
+  math: -18
+  lore: Attack 2
+  attack: 18
+  defence: 0
+  coins: 2
   cardImage: {fileID: 21300000, guid: 1315088b5d6188248ac2208ca4064112, type: 3}
   isDefense: 0
   isAttack: 1

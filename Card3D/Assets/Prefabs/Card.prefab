@@ -453,8 +453,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardSO: {fileID: 11400000, guid: 07b0810017e1e9e43844d84ae2521a59, type: 2}
-  roundCalculator: {fileID: 2729756244564084729, guid: d0c66ff941dae6945bf83af80d23056d,
-    type: 3}
   defence: 1
   attack: 1
   coins: 1
@@ -475,8 +473,7 @@ MonoBehaviour:
     m_Bits: 128
   assignedPlace: {fileID: 0}
   isHovered: 0
-  playerAttackPoints: 0
-  playerDefencePoints: 0
+  roundController: {fileID: 0}
   isSelected: 0
   theCol: {fileID: 8426771916565470576}
 --- !u!65 &8426771916565470576
@@ -735,7 +732,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9062026802091902559}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: -3.3}
+  m_LocalPosition: {x: 0, y: 0, z: -3.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

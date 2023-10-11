@@ -116,16 +116,9 @@ public class EnemyController : MonoBehaviour
         switch (enemyType)
         {
             case AIType.fromDeck:
-                if (selectedPoint.activeCard == null)
-                {
-                    Card newCard = Instantiate(cardToSpawn, cardSpawnPoint.position, cardSpawnPoint.rotation);
-                    newCard.cardSO = activeCards[0];
-                    activeCards.RemoveAt(0);
-                    newCard.SetupCard();
-                    newCard.MoveToPoint(selectedPoint.transform.position, selectedPoint.transform.rotation);
-                    selectedPoint.activeCard = newCard;
-                    newCard.assignedPlace = selectedPoint;
-                }
+
+                //Nothing here yet
+
                 break;
 
             case AIType.handRandom:
@@ -166,41 +159,15 @@ public class EnemyController : MonoBehaviour
                 break;
 
             case AIType.handDefence:
-                selectedCard = SelectedDefenceCardToPlay();
-                iterations = 50;
-                while (selectedCard != null && iterations > 0 && selectedPoint.activeCard == null)
-                {
-                    PlayCard(selectedCard, selectedPoint);
-                    selectedCard = SelectedDefenceCardToPlay();
-                    iterations--;
 
-                    yield return new WaitForSeconds(2);
-                    while (selectedPoint.activeCard != null && cardPoints.Count > 0)
-                    {
-                        randomPoint = Random.Range(0, cardPoints.Count);
-                        selectedPoint = cardPoints[randomPoint];
-                        cardPoints.RemoveAt(randomPoint);
-                    }
-                }
+                //Nothing here yet
+                
                 break;
 
             case AIType.handAttack:
-                selectedCard = SelectedAttackCardToPlay();
-                iterations = 50;
-                while (selectedCard != null && iterations > 0 && selectedPoint.activeCard == null)
-                {
-                    PlayCard(selectedCard, selectedPoint);
-                    selectedCard = SelectedAttackCardToPlay();
-                    iterations--;
 
-                    yield return new WaitForSeconds(2);
-                    while (selectedPoint.activeCard != null && cardPoints.Count > 0)
-                    {
-                        randomPoint = Random.Range(0, cardPoints.Count);
-                        selectedPoint = cardPoints[randomPoint];
-                        cardPoints.RemoveAt(randomPoint);
-                    }
-                }
+                //Nothing here yet
+
                 break;
         }
 
@@ -231,7 +198,6 @@ public class EnemyController : MonoBehaviour
         // Check if there are any active cards in the list
         if (activeCards.Count > 0)
         {
-            //Debug.Log("Active cards are here");
             Card newCard = Instantiate(cardToSpawn, cardSpawnPoint.position, cardSpawnPoint.rotation);
             newCard.cardSO = cardSO;
 

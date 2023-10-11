@@ -88,7 +88,7 @@ public class BattleController : MonoBehaviour
                 UiController.instance.playerTurn.SetActive(false);
                 UiController.instance.drawCardButton.SetActive(false);
                 UiController.instance.enemyTurn.SetActive(true);
-                Debug.Log("Enemy makin moves");
+                Debug.Log("Enemy making moves");
                 //NextTurn();
                 EnemyController.instance.StartAction();
 
@@ -108,8 +108,9 @@ public class BattleController : MonoBehaviour
 
                 //FillMyMoneyzz();
                 FillEnemyMoneyzz();
+                roundController.AddRound();
                 roundController.CalculateRoundResult();
-                roundController.ResetRoundPoints();
+                roundController.EndGame();
                 break;
         }
     }
