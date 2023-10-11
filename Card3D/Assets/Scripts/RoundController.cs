@@ -76,7 +76,7 @@ public class RoundController : MonoBehaviour
     }
     public void EndGame()
     {
-        if (currentRound >= 7)
+        if (currentRound >= 8)
         {
 
             if (playerHealth > opponentHealth)

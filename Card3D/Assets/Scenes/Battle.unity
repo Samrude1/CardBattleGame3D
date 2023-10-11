@@ -1705,6 +1705,11 @@ PrefabInstance:
       objectReference: {fileID: 517476359}
     - target: {fileID: 4841322084229440372, guid: 19cf8b24737ef014cbad0c90e376dc44,
         type: 3}
+      propertyPath: maxRounds
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841322084229440372, guid: 19cf8b24737ef014cbad0c90e376dc44,
+        type: 3}
       propertyPath: resetButton
       value: 
       objectReference: {fileID: 1324081733}
