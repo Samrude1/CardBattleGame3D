@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4881564c485a54280d661db7f11a27, type: 3}
+  m_Name: Combo_7
+  m_EditorClassIdentifier: 
+  cardName: Maaemon kuiskaus
+  math: +2-(1
+  lore: "Maaemon kuiskaus antaa rohkeutta hy\xF6kk\xE4ykseen tai puolustukseen. Sen
+    kuiskaus on kuin maan alla virtaava voima, joka vahvistaa taistelijoiden p\xE4\xE4t\xF6ksi\xE4
+    loppuun asti."
+  attack: 3
+  defence: 3
+  coins: 3
+  cardImage: {fileID: 21300000, guid: 8719c834d90edd54f8a7d47a85fb5549, type: 3}
+  cardTypeImage: {fileID: 21300000, guid: 270759cf8a9bf6644bcd0bbd776d24fe, type: 3}
+  isDefense: 1
+  isAttack: 1
