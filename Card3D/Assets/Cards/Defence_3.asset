@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe4881564c485a54280d661db7f11a27, type: 3}
-  m_Name: Defence
+  m_Name: Defence_3
   m_EditorClassIdentifier: 
-  cardName: Defence 1
-  math: +5
-  lore: Defence 1
+  cardName: Ajanharha
+  math: +7
+  lore: "Ajanharhan salaper\xE4iset kielet sekoittavat vihollisten laskelmat ja heid\xE4n
+    iskunsa ohjautuvat usein harhaan."
   attack: 0
-  defence: 5
-  coins: 1
-  cardImage: {fileID: 21300000, guid: 1315088b5d6188248ac2208ca4064112, type: 3}
+  defence: 7
+  coins: 4
+  cardImage: {fileID: 21300000, guid: edf33cd482db15c4ebe11c60abbd4953, type: 3}
   cardTypeImage: {fileID: 21300000, guid: 1d6447c3bfe48904c914ac1227aac485, type: 3}
   isDefense: 1
   isAttack: 0

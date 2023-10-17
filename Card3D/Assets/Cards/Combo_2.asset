@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe4881564c485a54280d661db7f11a27, type: 3}
-  m_Name: Attack
+  m_Name: Combo_2
   m_EditorClassIdentifier: 
-  cardName: Attack 1
-  math: -8
-  lore: Attack 1
-  attack: 8
-  defence: 0
+  cardName: Tornienvartija
+  math: +1
+  lore: "Tornien vartija suojaa linnoituksia sek\xE4 hy\xF6kk\xE4yksilt\xE4 ett\xE4
+    puolustaa niit\xE4 aktiivisesti."
+  attack: 1
+  defence: 1
   coins: 1
-  cardImage: {fileID: 21300000, guid: 1315088b5d6188248ac2208ca4064112, type: 3}
-  cardTypeImage: {fileID: 21300000, guid: ce20e3eb0ec4fa1469f40ea1a40bc7f5, type: 3}
-  isDefense: 0
+  cardImage: {fileID: 21300000, guid: 24a35c809841f8245afe2e0170fc3bc1, type: 3}
+  cardTypeImage: {fileID: 21300000, guid: 270759cf8a9bf6644bcd0bbd776d24fe, type: 3}
+  isDefense: 1
   isAttack: 1

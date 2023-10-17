@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe4881564c485a54280d661db7f11a27, type: 3}
-  m_Name: Attack 1
+  m_Name: Attack_2
   m_EditorClassIdentifier: 
-  cardName: Attack 2
-  math: -18
-  lore: Attack 2
-  attack: 18
+  cardName: Myrskyvasara
+  math: +5
+  lore: "Myrskyvasaraa k\xE4ytt\xE4neet voivat kutsua tuulia ja ukkosta aseidensa
+    avulla. Sen voima on yht\xE4 salamoiden raivoa."
+  attack: 5
   defence: 0
-  coins: 2
-  cardImage: {fileID: 21300000, guid: 1315088b5d6188248ac2208ca4064112, type: 3}
+  coins: 3
+  cardImage: {fileID: 21300000, guid: 64e3214a6a9249b428addb9e7bc9380e, type: 3}
   cardTypeImage: {fileID: 21300000, guid: ce20e3eb0ec4fa1469f40ea1a40bc7f5, type: 3}
   isDefense: 0
   isAttack: 1

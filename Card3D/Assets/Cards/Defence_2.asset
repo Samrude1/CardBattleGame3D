@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe4881564c485a54280d661db7f11a27, type: 3}
+  m_Name: Defence_2
+  m_EditorClassIdentifier: 
+  cardName: Kultakilpi
+  math: +2-(1
+  lore: "Kultakilpi ei n\xE4yt\xE4 kovin vahvalta, mutta sen hehkuva pinta k\xE4\xE4nt\xE4\xE4
+    vihollisen voimat takaisin heit\xE4 itse\xE4\xE4n vastaan."
+  attack: 0
+  defence: 2
+  coins: 2
+  cardImage: {fileID: 21300000, guid: 4cc4cba906915824ab6a18b84759bc24, type: 3}
+  cardTypeImage: {fileID: 21300000, guid: 1d6447c3bfe48904c914ac1227aac485, type: 3}
+  isDefense: 1
+  isAttack: 0
