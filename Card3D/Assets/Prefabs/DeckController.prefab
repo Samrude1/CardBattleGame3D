@@ -44,18 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2190732f18be04597b2dd88793f7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  card: {fileID: 0}
-  attackCardPrefabs:
-  - {fileID: 9154273891249079908, guid: d5103b5006d4a0d4ea40ab0cb056dcc5, type: 3}
-  defenseCardPrefabs:
-  - {fileID: 9154273891249079908, guid: f2d95d994525ca240bfc9b91af84b173, type: 3}
-  comboCardPrefabs:
-  - {fileID: 9154273891249079908, guid: b044e956cc22df9429050ae2699972e9, type: 3}
   deckToUse:
   - {fileID: 11400000, guid: 07b0810017e1e9e43844d84ae2521a59, type: 2}
-  - {fileID: 11400000, guid: b6f95174f50bcb54fa5d37cc802b090f, type: 2}
   - {fileID: 11400000, guid: 2499395ae29e99b4ca8baa6d51a94a02, type: 2}
+  - {fileID: 11400000, guid: bd074f1e34dd7314d9b34e278d355427, type: 2}
+  - {fileID: 11400000, guid: b6f95174f50bcb54fa5d37cc802b090f, type: 2}
   - {fileID: 11400000, guid: 79148ffd10d32d340880d3d713069859, type: 2}
-  cardToSpawn: {fileID: 9154273891249079908, guid: b044e956cc22df9429050ae2699972e9,
+  cardToSpawn: {fileID: 9154273891249079908, guid: d5103b5006d4a0d4ea40ab0cb056dcc5,
     type: 3}
   drawCost: 1
