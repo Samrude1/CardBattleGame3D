@@ -13,7 +13,7 @@ public class CardScriptableObject : ScriptableObject
 
 
     public int attack, defence, coins;
-    public Sprite cardImage;
+    public Sprite cardImage, cardTypeImage;
     public bool isDefense;
     public bool isAttack;
 }

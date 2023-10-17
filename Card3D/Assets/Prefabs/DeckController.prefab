@@ -44,6 +44,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d2190732f18be04597b2dd88793f7d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  card: {fileID: 0}
+  attackCardPrefabs:
+  - {fileID: 9154273891249079908, guid: d5103b5006d4a0d4ea40ab0cb056dcc5, type: 3}
+  defenseCardPrefabs:
+  - {fileID: 9154273891249079908, guid: f2d95d994525ca240bfc9b91af84b173, type: 3}
+  comboCardPrefabs:
+  - {fileID: 9154273891249079908, guid: b044e956cc22df9429050ae2699972e9, type: 3}
   deckToUse:
   - {fileID: 11400000, guid: 07b0810017e1e9e43844d84ae2521a59, type: 2}
   - {fileID: 11400000, guid: b6f95174f50bcb54fa5d37cc802b090f, type: 2}

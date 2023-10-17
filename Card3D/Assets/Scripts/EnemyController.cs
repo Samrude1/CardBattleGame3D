@@ -17,8 +17,8 @@ public class EnemyController : MonoBehaviour
     public Transform cardSpawnPoint;
     public CardPlacePoint[] enemyCardPoints;
     public float enemyTimer = 0.5f;
-    public int enemyAttackPoints = 0;
-    public int enemyDefencePoints = 0;
+    //public int enemyAttackPoints = 0;
+    //public int enemyDefencePoints = 0;
     public RoundController roundController;
 
     public enum AIType { fromDeck, handRandom, handDefence, handAttack}
@@ -30,7 +30,6 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
         roundController = FindObjectOfType<RoundController>();
         SetupDeck();
         

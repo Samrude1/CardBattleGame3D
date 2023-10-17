@@ -19,5 +19,6 @@ MonoBehaviour:
   defence: 20
   coins: 2
   cardImage: {fileID: 21300000, guid: 1315088b5d6188248ac2208ca4064112, type: 3}
+  cardTypeImage: {fileID: 21300000, guid: 1d6447c3bfe48904c914ac1227aac485, type: 3}
   isDefense: 1
   isAttack: 0

@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe4881564c485a54280d661db7f11a27, type: 3}
-  m_Name: Defence
+  m_Name: Combo
   m_EditorClassIdentifier: 
-  cardName: Defence 1
-  math: +5
-  lore: Defence 1
-  attack: 0
-  defence: 5
-  coins: 1
+  cardName: Combo
+  math: 10/10
+  lore: Combo
+  attack: 10
+  defence: 10
+  coins: 3
   cardImage: {fileID: 21300000, guid: 1315088b5d6188248ac2208ca4064112, type: 3}
-  cardTypeImage: {fileID: 21300000, guid: 1d6447c3bfe48904c914ac1227aac485, type: 3}
+  cardTypeImage: {fileID: 21300000, guid: 270759cf8a9bf6644bcd0bbd776d24fe, type: 3}
   isDefense: 1
-  isAttack: 0
+  isAttack: 1

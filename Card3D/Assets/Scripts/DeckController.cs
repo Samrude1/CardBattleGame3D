@@ -26,7 +26,7 @@ public class DeckController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.T))
         {
             DrawCardToHand();
         }
@@ -41,7 +41,7 @@ public class DeckController : MonoBehaviour
 
         int iterations = 0;
 
-        while(tempDeck.Count > 0 && iterations < 500)
+        while (tempDeck.Count > 0 && iterations < 500)
         {
             int selected = Random.Range(0, tempDeck.Count);
             activeCards.Add(tempDeck[selected]);
@@ -52,7 +52,7 @@ public class DeckController : MonoBehaviour
 
     public void DrawCardToHand()
     {
-        if(activeCards.Count == 0)
+        if (activeCards.Count == 0)
         {
             SetupDeck();
         }
@@ -66,7 +66,7 @@ public class DeckController : MonoBehaviour
 
     public void DrawCost()
     {
-        if(BattleController.instance.playerCoins >= drawCost)
+        if (BattleController.instance.playerCoins >= drawCost)
         {
             DrawCardToHand();
             BattleController.instance.SpendPlayerCoins(drawCost);
@@ -79,9 +79,11 @@ public class DeckController : MonoBehaviour
     }
     public void AutoDraw(int numberOf)
     {
-        for(int i = 0; i < numberOf; i++)
+        for (int i = 0; i < numberOf; i++)
         {
             DrawCardToHand();
         }
     }
+
+
 }

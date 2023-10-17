@@ -9,15 +9,13 @@ public class Card : MonoBehaviour
     public CardScriptableObject cardSO;
     public int defence, attack, coins;
     public TMP_Text coinsText, nameText, actionText, loreText;
-    public Image cardArt;
+    public Image cardArt, cardTypeImage;
     public float moveSpeed, rotateSpeed;
     public bool inHand;
     public int handPosition;
     public LayerMask whatIsDesktop, whatIsPlacement;
     public CardPlacePoint assignedPlace;
     public bool isHovered = false;
-    //public int playerAttackPoints = 0;
-    //public int playerDefensePoints = 0;
     public RoundController roundController;
 
     private Vector3 targetPoint; // tämä on siis 0,0,0
@@ -60,6 +58,7 @@ public class Card : MonoBehaviour
             loreText.text = cardSO.lore;
 
             cardArt.sprite = cardSO.cardImage;
+            cardTypeImage.sprite = cardSO.cardTypeImage;
         }
         else
         {
