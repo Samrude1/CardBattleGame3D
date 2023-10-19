@@ -212,6 +212,7 @@ public class EnemyController : MonoBehaviour
             cardsInHand.Remove(cardSO);
 
             BattleController.instance.SpendEnemyCoins(cardSO.coins);
+            //EnemyDrawCard(); //activate this if you want enemy to draw always when coins but no playable cards (can make multiple draws)
             //Debug.Log("Enemy plays"); //This is where we put some points in pool
             roundController.AddEnemyPoints(cardSO.attack, cardSO.defence);
         }
