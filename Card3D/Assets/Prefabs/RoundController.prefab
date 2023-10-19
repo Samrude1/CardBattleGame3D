@@ -52,3 +52,11 @@ MonoBehaviour:
   opponentHealth: 100
   playerHealthText: {fileID: 0}
   opponentHealthText: {fileID: 0}
+  currentRoundText: {fileID: 0}
+  currentRound: 1
+  maxRounds: 8
+  winText: {fileID: 0}
+  loseText: {fileID: 0}
+  tieText: {fileID: 0}
+  resetButton: {fileID: 0}
+  canvas2: {fileID: 0}

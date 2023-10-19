@@ -79,9 +79,24 @@ MonoBehaviour:
   deckToUse:
   - {fileID: 11400000, guid: 07b0810017e1e9e43844d84ae2521a59, type: 2}
   - {fileID: 11400000, guid: 2499395ae29e99b4ca8baa6d51a94a02, type: 2}
+  - {fileID: 11400000, guid: c32403d87d8828a4788789936754fa07, type: 2}
+  - {fileID: 11400000, guid: 68d658a2467e25f43bece8d437620bf6, type: 2}
+  - {fileID: 11400000, guid: 7d9a9ec8e0757de449fd051a1f06ff17, type: 2}
   - {fileID: 11400000, guid: bd074f1e34dd7314d9b34e278d355427, type: 2}
+  - {fileID: 11400000, guid: 180ad7623facae545b69b594b720edde, type: 2}
+  - {fileID: 11400000, guid: 3c6835e5246ab284d8de571f16451c5f, type: 2}
+  - {fileID: 11400000, guid: e8caeb79c8203b64aaa5b23333077bb7, type: 2}
+  - {fileID: 11400000, guid: cec3f16f1271535489b708f66273e2b3, type: 2}
+  - {fileID: 11400000, guid: 20ee886729133bb4ab1cc33148c6172d, type: 2}
+  - {fileID: 11400000, guid: cf6ea78233361354499d175036ada861, type: 2}
+  - {fileID: 11400000, guid: 2da340af61a28d149a4b55b764eb7b58, type: 2}
+  - {fileID: 11400000, guid: 9956a5f7ac93c8346b8ee95ce9aaa8fb, type: 2}
+  - {fileID: 11400000, guid: 81889c9d81195e84096214ffdb42618e, type: 2}
   - {fileID: 11400000, guid: b6f95174f50bcb54fa5d37cc802b090f, type: 2}
+  - {fileID: 11400000, guid: 5262ce3c119447249b3126073661ac33, type: 2}
+  - {fileID: 11400000, guid: 204483866790da5458d2a6eefac56c34, type: 2}
   - {fileID: 11400000, guid: 79148ffd10d32d340880d3d713069859, type: 2}
+  - {fileID: 11400000, guid: d748ea86ca81e24409a995d1c0eb0da6, type: 2}
   activeCards: []
   cardToSpawn: {fileID: 9154273891249079908, guid: d5103b5006d4a0d4ea40ab0cb056dcc5,
     type: 3}
@@ -102,6 +117,7 @@ MonoBehaviour:
   - {fileID: 0}
   enemyTimer: 0.5
   roundController: {fileID: 0}
+  card: {fileID: 0}
   enemyType: 1
   cardsInHand: []
   startHandSize: 3

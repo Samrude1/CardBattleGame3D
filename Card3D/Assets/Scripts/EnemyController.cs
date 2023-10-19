@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     public static EnemyController instance;
+  
 
     private void Awake()
     {
@@ -17,9 +18,8 @@ public class EnemyController : MonoBehaviour
     public Transform cardSpawnPoint;
     public CardPlacePoint[] enemyCardPoints;
     public float enemyTimer = 0.5f;
-    //public int enemyAttackPoints = 0;
-    //public int enemyDefencePoints = 0;
     public RoundController roundController;
+    public Card card;
 
     public enum AIType { fromDeck, handRandom, handDefence, handAttack}
     public AIType enemyType;
@@ -30,6 +30,7 @@ public class EnemyController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        card = FindObjectOfType<Card>();
         roundController = FindObjectOfType<RoundController>();
         SetupDeck();
         
@@ -75,7 +76,7 @@ public class EnemyController : MonoBehaviour
         {
             SetupDeck();
         }
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1f);
 
         if (enemyType != AIType.fromDeck)
         {
@@ -253,6 +254,7 @@ public class EnemyController : MonoBehaviour
         return cardToPlay;
     }
 
+    // SelectedAttackCardToPlay() and SelectedDefenceCardToPlay() not used yet.
     CardScriptableObject SelectedAttackCardToPlay()
     {
         CardScriptableObject cardToPlay = null;
@@ -323,4 +325,26 @@ public class EnemyController : MonoBehaviour
         return cardToPlay;
     }
 
+    public void EnemyDrawCard()
+    {
+        bool shouldDrawCard = true; // Assume the enemy should draw a card
+
+        foreach (CardScriptableObject card in cardsInHand)
+        {
+            // If the enemy has at least 1 coin and one card in hand is affordable, don't draw a card
+            if (BattleController.instance.enemyCoins >= 1 && card.coins <= BattleController.instance.enemyCoins)
+            {
+                shouldDrawCard = false;
+                break; // No need to continue checking
+            }
+        }
+
+        if (shouldDrawCard)
+        {
+            // Call the DeckController to draw a card
+            DeckController.instance.DrawCardToEnemyHand(this);
+            BattleController.instance.enemyDraws.SetActive(true);
+            Debug.Log("Enemy draws a card");
+        }
+    }
 }

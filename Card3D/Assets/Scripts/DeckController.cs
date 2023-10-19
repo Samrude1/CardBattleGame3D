@@ -15,7 +15,7 @@ public class DeckController : MonoBehaviour
     private List<CardScriptableObject> activeCards = new List<CardScriptableObject>();
 
     public Card cardToSpawn;
-    public int drawCost;
+    public int drawCost = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -85,5 +85,22 @@ public class DeckController : MonoBehaviour
         }
     }
 
+    public void DrawCardToEnemyHand(EnemyController enemy)
+    {
+        if (activeCards.Count == 0)
+        {
+            SetupDeck();
+        }
+
+        // Draw a card to the enemy's hand
+        Card newCard = Instantiate(cardToSpawn, transform.position, transform.rotation);
+        newCard.cardSO = activeCards[0];
+        newCard.SetupCard();
+
+        activeCards.RemoveAt(0);
+
+        // Add the drawn card to the enemy's hand
+        enemy.cardsInHand.Add(newCard.cardSO);
+    }
 
 }

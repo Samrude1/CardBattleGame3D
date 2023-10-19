@@ -11,6 +11,7 @@ public class BattleController : MonoBehaviour
     public int cardsPerTurn = 1;
     public int startingCards = 3;
     public RoundController roundController;
+    public GameObject enemyDraws;
     private void Awake()
     { 
         instance = this;
@@ -70,6 +71,7 @@ public class BattleController : MonoBehaviour
         switch(turnOrder)
         {
             case TurnOrder.playerTurn:
+
                 Debug.Log("PlayerTurn");
                 UiController.instance.makeCalc.SetActive(false);
                 UiController.instance.playerTurn.SetActive(true);
@@ -83,13 +85,15 @@ public class BattleController : MonoBehaviour
                 DeckController.instance.AutoDraw(cardsPerTurn);
                 break;
 
-                case TurnOrder.enemyTurn:
+            case TurnOrder.enemyTurn:
+
                 UiController.instance.coinsWarn.SetActive(false);
                 UiController.instance.playerTurn.SetActive(false);
                 UiController.instance.drawCardButton.SetActive(false);
                 UiController.instance.enemyTurn.SetActive(true);
                 Debug.Log("Enemy making moves");
                 //NextTurn();
+                EnemyController.instance.EnemyDrawCard();
                 EnemyController.instance.StartAction();
 
                 if (currentEnemyMaxcoins < maxCoins)
@@ -100,7 +104,9 @@ public class BattleController : MonoBehaviour
 
                 break;
 
-                case TurnOrder.calculateRound:
+            case TurnOrder.calculateRound:
+
+                enemyDraws.SetActive(false);
                 UiController.instance.enemyTurn.SetActive(false);
                 UiController.instance.makeCalc.SetActive(true);
                 Debug.Log("Making calculations");
@@ -110,6 +116,7 @@ public class BattleController : MonoBehaviour
                 FillEnemyMoneyzz();
                 roundController.AddRound();
                 roundController.CalculateRoundResult();
+                //DeckController.instance.drawCost++;
                 roundController.EndGame();
                 break;
         }
