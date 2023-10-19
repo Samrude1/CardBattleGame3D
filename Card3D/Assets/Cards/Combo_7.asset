@@ -17,9 +17,9 @@ MonoBehaviour:
   lore: "Maaemon kuiskaus antaa rohkeutta hy\xF6kk\xE4ykseen tai puolustukseen. Sen
     kuiskaus on kuin maan alla virtaava voima, joka vahvistaa taistelijoiden p\xE4\xE4t\xF6ksi\xE4
     loppuun asti."
-  attack: 3
-  defence: 3
-  coins: 3
+  attack: 7
+  defence: 7
+  coins: 6
   cardImage: {fileID: 21300000, guid: 8719c834d90edd54f8a7d47a85fb5549, type: 3}
   cardTypeImage: {fileID: 21300000, guid: 270759cf8a9bf6644bcd0bbd776d24fe, type: 3}
   isDefense: 1

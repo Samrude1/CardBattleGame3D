@@ -16,9 +16,9 @@ MonoBehaviour:
   math: +1)-
   lore: "Varjohy\xF6kk\xE4ys on nopea ja salakavala, mutta se voi my\xF6s heikent\xE4\xE4
     omaa puolustusta hy\xF6kk\xE4yksen ajaksi."
-  attack: 1
-  defence: 1
-  coins: 1
+  attack: 3
+  defence: 3
+  coins: 3
   cardImage: {fileID: 21300000, guid: ba7d80c1f026a7a4298c46378b8f4f3f, type: 3}
   cardTypeImage: {fileID: 21300000, guid: 270759cf8a9bf6644bcd0bbd776d24fe, type: 3}
   isDefense: 1

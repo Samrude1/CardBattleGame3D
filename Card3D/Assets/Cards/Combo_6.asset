@@ -16,9 +16,9 @@ MonoBehaviour:
   math: )+2-(
   lore: "Sotamaagin voima yhdist\xE4\xE4 fyysisen ja taianomaisen iskun, mutta valinta
     on teht\xE4v\xE4, k\xE4yt\xE4tk\xF6 sit\xE4 hy\xF6kk\xE4ykseen vai puolustukseen."
-  attack: 2
-  defence: 2
-  coins: 3
+  attack: 8
+  defence: 8
+  coins: 6
   cardImage: {fileID: 21300000, guid: c8b58edfa8d563c41873d93973e01d7d, type: 3}
   cardTypeImage: {fileID: 21300000, guid: 270759cf8a9bf6644bcd0bbd776d24fe, type: 3}
   isDefense: 1

@@ -16,9 +16,9 @@ MonoBehaviour:
   math: +2
   lore: "Viidakon suojelija voi joko vahvistaa puolustustasi tai k\xE4yd\xE4 raivoisaan
     hy\xF6kk\xE4ykseen vihollisia vastaan."
-  attack: 2
-  defence: 2
-  coins: 2
+  attack: 5
+  defence: 5
+  coins: 5
   cardImage: {fileID: 21300000, guid: dacb43c5d88072741a59e2920c427f94, type: 3}
   cardTypeImage: {fileID: 21300000, guid: 270759cf8a9bf6644bcd0bbd776d24fe, type: 3}
   isDefense: 1
